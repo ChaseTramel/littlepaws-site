@@ -50,13 +50,15 @@ function App() {
     <div className="flex flex-wrap align-items-center justify-content-center text-center">
       <p>{data.bio} <Emoji symbol="💛" label="yellow-heart" /></p>
     </div>
-    <div className="flex flex-column align-items-center justify-items-center">
-      <div className="flex flex-column align-items-center justify-items-center">
-        {data.links.map((link) => (<a href={`${link.url}`}> <Button className="flex m-2 p-4 p-button-raised p-button-rounded bg-yellow-300 border-none text-800 text-xl font-bold  transition-colors transition-duration-500 hover:bg-yellow-400  hover:text-gray-900">
+    <div className="flex flex-column align-items-center justify-items-center w-screen ">
+      {data.links.map((link) => <a href ={`${link.url}`}>
+      <div className="flex flex-column align-items-center justify-items-center w-screen">
+        <Button className="flex m-2 p-4 w-8 w- p-button-raised p-button-rounded bg-yellow-300 border-none text-800 text-xl font-bold  transition-colors transition-duration-500 hover:bg-yellow-400  hover:text-gray-900">
         <i className={`pi pi-${link.icon} flex m-1 p-1`}></i>
           <span className="px-3">{link.name}</span>
-        </Button> </a>))}
+        </Button> 
       </div>
+      </a>)}
     </div>
   </div>
 }
