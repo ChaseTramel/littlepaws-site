@@ -19,41 +19,43 @@ function App() {
     bio: "Scripter, Graphic Designer, & Marketing Consultant",
     links: [
       {
-        name: "Message me on SL Facebook",
+        name: "Message me on Facebook",
         url: "https://www.facebook.com/profile.php?id=100087142953727",
         icon: "facebook",
       },
       {
-        name: "Message me at Chase#7689 on Discord",
-        url: "https://discord.com/channels/@me",
+        name: "Message me on Discord",
+        url: "https://discordapp.com/users/551209559557931043",
         icon: "discord",
       },
       {
-        name: "",
-        url: "",
-        icon: "",
+        name: "Check out my Marketplace store",
+        url: "https://marketplace.secondlife.com/stores/244066",
+        icon: "shopping-cart",
       },
       {
-        name: "",
-        url: "",
-        icon: "",
+        name: "Pay me via CashApp",
+        url: "https://cash.app/$KaseyLittlepaws",
+        icon: "money-bill",
       }
     ]
   }
-  return <div >
+  return <div className=" bg-pink-50">
     <div className="flex flex-wrap align-items-center justify-content-center padding pt-5">
       <img src="https://i.imgur.com/x44TKRG.png" height="auto" width="15%" alt="Kasey Littlepaws" />
     </div>
     <div className="flex flex-wrap align-items-center justify-content-center">
       <h1>{data.name}</h1>
     </div>
-    <div className="flex flex-wrap align-items-center justify-content-center">
+    <div className="flex flex-wrap align-items-center justify-content-center text-center">
       <p>{data.bio} <Emoji symbol="💛" label="yellow-heart" /></p>
     </div>
     <div className="flex flex-column align-items-center justify-items-center">
       <div className="flex flex-column align-items-center justify-items-center">
-        {data.links.map((link) => (<div className= "flex flex-column align-items-center justify-items-center"><a href={link.url}> <Button label={link.name} className="flex w-12 m-3 p-3 p-button-raised p-button-rounded bg-yellow-300 border-none text-xl font-bold transition-colors transition-duration-500 hover:bg-yellow-400 text-white hover:text-gray-900" /> </a></div>
-        ))}
+        {data.links.map((link) => (<a href={`${link.url}`}> <Button className="flex m-2 p-4 p-button-raised p-button-rounded bg-yellow-300 border-none text-800 text-xl font-bold  transition-colors transition-duration-500 hover:bg-yellow-400  hover:text-gray-900">
+        <i className={`pi pi-${link.icon} flex m-1 p-1`}></i>
+          <span className="px-3">{link.name}</span>
+        </Button> </a>))}
       </div>
     </div>
   </div>
