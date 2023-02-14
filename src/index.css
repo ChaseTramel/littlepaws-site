@@ -20,7 +20,6 @@ a {
   text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.background{
+  background-image: linear-gradient(to right bottom, #fffdd0, #ffd5d5);
 }

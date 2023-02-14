@@ -40,7 +40,7 @@ function App() {
       }
     ]
   }
-  return <div style = {{height:"100%"}}className="bg-pink-50">
+  return <div className="bg-repeat-y bg-purple-100 min-h-screen background">
     <div className="flex flex-wrap align-items-center justify-content-center padding pt-5">
       <img src="https://i.imgur.com/x44TKRG.png" height="auto" width="15%" alt="Kasey Littlepaws" />
     </div>
