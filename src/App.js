@@ -5,6 +5,7 @@ import "primeflex/primeflex.css";
 
 import Emoji from 'a11y-react-emoji'
 import { Button } from 'primereact/button';
+import {Helmet} from "react-helmet";
 
 
 <style>
@@ -14,7 +15,7 @@ import { Button } from 'primereact/button';
 
 function App() {
   const data = {
-    name: "Kasey Chase Littlepaws",
+    name: "Kasey Littlepaws",
     image: "",
     bio: "Scripter, Graphic Designer, & Marketing Consultant",
     links: [
@@ -41,6 +42,11 @@ function App() {
     ]
   }
   return <div className="bg-repeat-y bg-purple-100 min-h-screen background">
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>Kasey Littlepaws | Second Life Scripting, Graphic Design & Marketing Consulting</title>
+                <link rel="canonical" href="https://kaseylittlepaws.com/" />
+            </Helmet>
     <div className="flex flex-wrap align-items-center justify-content-center padding pt-5">
       <img src="https://i.imgur.com/x44TKRG.png" height="auto" width="15%" alt="Kasey Littlepaws" />
     </div>
