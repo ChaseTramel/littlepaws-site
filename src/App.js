@@ -40,7 +40,7 @@ function App() {
       }
     ]
   }
-  return <div className=" bg-pink-50">
+  return <div style = {{height:"100%"}}className="bg-pink-50">
     <div className="flex flex-wrap align-items-center justify-content-center padding pt-5">
       <img src="https://i.imgur.com/x44TKRG.png" height="auto" width="15%" alt="Kasey Littlepaws" />
     </div>
