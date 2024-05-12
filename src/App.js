@@ -33,11 +33,6 @@ function App() {
         name: "Check out my Marketplace store",
         url: "https://marketplace.secondlife.com/stores/244066",
         icon: "shopping-cart",
-      },
-      {
-        name: "Pay me via CashApp",
-        url: "https://cash.app/$KaseyLittlepaws",
-        icon: "money-bill",
       }
     ]
   }
