@@ -38,13 +38,10 @@ function App() {
   }
   return <div className="bg-repeat-y bg-purple-100 min-h-screen background">
     <Helmet>
-                <meta charSet="utf-8" />
-                <title>Kasey Littlepaws | Second Life Scripting, Graphic Design & Marketing Consulting</title>
-                <link rel="canonical" href="https://kaseylittlepaws.com/" />
-            </Helmet>
-    <div className="flex flex-wrap align-items-center justify-content-center padding pt-5">
-      <img src="https://i.imgur.com/x44TKRG.png" height="auto" width="15%" alt="Kasey Littlepaws" />
-    </div>
+        <meta charSet="utf-8" />
+        <title>Kasey Littlepaws | Second Life Scripting, Graphic Design & Marketing Consulting</title>
+        <link rel="canonical" href="https://kaseylittlepaws.com/" />
+    </Helmet>
     <div className="flex flex-wrap align-items-center justify-content-center">
       <h1>{data.name}</h1>
     </div>
@@ -54,7 +51,7 @@ function App() {
     <div className="flex flex-column align-items-center justify-items-center w-screen ">
       {data.links.map((link) => <a href ={`${link.url}`}>
       <div className="flex flex-column align-items-center justify-items-center w-screen">
-        <Button className="flex m-2 p-4 w-8 p-button-raised p-button-rounded bg-yellow-300 border-none text-800 text-xl font-bold  transition-colors transition-duration-500 lg:w-4 xl:w-4 hover:bg-yellow-400 hover:text-gray-900">
+        <Button className="flex m-2 p-4 w-8 p-button-raised p-button-rounded bg-yellow-300 border-none text-800 text-xl font-bold transition-colors transition-duration-500 lg:w-4 xl:w-4 hover:bg-yellow-400 hover:text-gray-900">
         <i className={`pi pi-${link.icon} flex m-1 p-1`}></i>
           <span className="px-3">{link.name}</span>
         </Button> 
